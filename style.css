@@ -1,1 +1,25 @@
+body (
+background-color: #f4flea;
+color: #222222;
+font-family: arial, sans-serif;
+)
 
+hearder (
+background-color: #6b2d5c;
+color: white;
+text-aling: center;
+padding: 30px;
+}
+
+h1 (
+    font-size:36px;
+}
+
+h2 (
+color: #6b2d5c;
+) 
+
+p  { 
+font-size: 18px;
+  line-height: 1.6;
+}
