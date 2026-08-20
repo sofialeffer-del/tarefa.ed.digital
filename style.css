@@ -1,28 +1,46 @@
-body (
-background-color: #f4flea;
-color: #222222;
-font-family: arial, sans-serif;
-)
+body {
+    background-color: #f4f1ea;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
-hearder {
-background-color: #044591;
-color: white;
-text-aling: center;
-padding: 30px;
+header {
+    background-color: #6b2d5c;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
 h1 {
-    font-size:36px;
+    font-size: 36px;
 }
 
-h2 (
-color: #6b2d5c;
-) 
+h2 {
+    color: #6b2d5c;
+}
 
-p  { 
-font-size: 18px;
-  line-height: 1.6;
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
 
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #9b4d83;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #c77dff;
 }
 
 main {
@@ -31,13 +49,13 @@ main {
 }
 
 section {
-    background-color: vhite;
+    background-color: white;
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
 }
 
-img{
+img {
     width: 100%;
     max-width: 600px;
     display: block;
@@ -46,9 +64,29 @@ img{
 }
 
 figcaption {
-    text-aling: center;
+    text-align: center;
     font-size: 14px;
-    color: #6b2d5c
+    color: #555555;
     margin-top: 8px;
 }
 
+.card {
+    background-color: #f3d9fa;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 6px solid #6b2d5c;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+  
