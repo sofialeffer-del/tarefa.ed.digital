@@ -10,6 +10,14 @@
     --cor-clara: #2f005c;
     --cor-rodape: #73007e;
 }
+.tema-escuro{
+    --cor-fundo: #121212;
+    --cor-texto:#f5f5f5;
+    --cor-principal: #d7a6ca;
+    --cor-superficie: #1e1e1e;
+    --cor-card: #2b2530;
+
+}
 
 /* CONFIGURAÇÕES GERAIS */
 
@@ -203,3 +211,19 @@ footer p {
         max-height: 350px;
     }
 } 
+.galeria {
+    display: flex;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+.btn-tema{
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
