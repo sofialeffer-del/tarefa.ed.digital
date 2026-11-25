@@ -20,19 +20,8 @@ botoesCurtir.forEach(function (botaoCurtir) {
 
 const btnTema = document.querySelector(".btn-tema");
 
-// Verifica se o usuário já tinha ativado o tema escuro anteriormente
-if (localStorage.getItem("tema") === "escuro") {
-    document.body.classList.add("tema-escuro");
-}
-
-btnTema.addEventListener("click", mudarTema);
-
-function mudarTema() {
-    document.body.classList.toggle("tema-escuro");
-
-    if (document.body.classList.contains("tema-escuro")) {
-        localStorage.setItem("tema", "escuro");
-    } else {
-        localStorage.setItem("tema", "claro");
-    }
+if (btnTema) {
+    btnTema.addEventListener("click", function () {
+        document.body.classList.toggle("tema-escuro");
+    });
 }
