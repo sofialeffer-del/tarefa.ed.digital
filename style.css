@@ -10,7 +10,8 @@
     --cor-clara: #2f005c;
     --cor-rodape: #73007e;
 }
-.tema-escuro{
+
+.tema-escuro {
     --cor-fundo: #121212;
     --cor-texto: #f5f5f5;
     --cor-principal: #d7a6ca;
@@ -35,6 +36,7 @@ body {
     color: var(--cor-texto);
     font-family: Arial, sans-serif;
     margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* CABEÇALHO */
@@ -70,6 +72,14 @@ nav a {
     margin: 5px;
     display: inline-block;
     transition: 0.3s;
+}
+
+.tema-escuro nav a {
+    color: var(--cor-texto);
+}
+
+.tema-escuro nav a:hover {
+    color: var(--cor-clara);
 }
 
 nav a:hover {
@@ -125,6 +135,11 @@ figcaption {
     margin-top: 8px;
 }
 
+figcaption a {
+    color: inherit;
+    font-weight: bold;
+}
+
 /* CARDS DE CURIOSIDADES */
 
 .card {
@@ -142,6 +157,20 @@ figcaption {
 
 .card p {
     color: white;
+}
+
+/* GALERIA */
+
+.galeria {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria figure {
+    flex: 1 1 300px;
+    margin: 10px 0;
 }
 
 /* BOTÕES */
@@ -168,6 +197,21 @@ button:hover {
     margin: 20px auto;
 }
 
+.btn-tema {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 /* RODAPÉ */
 
 footer {
@@ -185,7 +229,6 @@ footer p {
 /* RESPONSIVIDADE PARA CELULARES */
 
 @media (max-width: 600px) {
-
     main {
         width: 92%;
     }
@@ -214,20 +257,4 @@ footer p {
     img {
         max-height: 350px;
     }
-} 
-.galeria {
-    display: flex;
-    gap:20px;
-    flex-wrap:wrap;
-
-}
-.btn-tema{
-    position:fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 22px;
-
 }
